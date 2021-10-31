@@ -1,3 +1,5 @@
 = Curriculum vitae
 
 This repository is in a working in progress state.
+
+https://gitlab.com/ema-pe/curriculum-vitae/-/jobs/artifacts/master/raw/cv_emanuele_petriglia.pdf?job=build-pdf[Latest PDF download].
