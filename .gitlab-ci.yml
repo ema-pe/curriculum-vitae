@@ -1,0 +1,16 @@
+# GitLab CI configuration to build the curriculum as a PDF from LaTeX sources.
+image: aergus/latex:2021-10-08
+
+stages:
+  - build
+
+build-pdf:
+  stage: build
+  script:
+    - pdflatex cv.tex
+      # mv is needes because I cannot specify output name in pdflatex.
+    - mv cv.pdf cv_emanuele_petriglia.pdf
+  artifacts:
+    paths:
+      - cv_emanuele_petriglia.pdf
+    name: "cv-$CI_COMMIT_SHORT_SHA-$CI_JOB_ID"
