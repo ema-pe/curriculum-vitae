@@ -280,6 +280,5 @@
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
 \AtBeginDocument{%
-    \pagestyle{empty}
     \color{body}
     \raggedright}
