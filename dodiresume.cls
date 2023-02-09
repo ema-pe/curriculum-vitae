@@ -218,18 +218,18 @@
     \vspace{6pt}}
 
 \newcommand{\cvsection}[2][]{%
-    \nointerlineskip\vspace{14pt}%
+    \nointerlineskip\vspace{10pt}%
     \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
     {\color{heading}\cvsectionfont{#2}}
     \vspace{0pt}}
 
 \newcommand{\cvsubsection}[1]{%
-    \vspace{9pt}
+    \vspace{10pt}
     {\color{subheading}\normalsize\bfseries{#1}\par}
-    \vspace{4pt}}
+    \vspace{0pt}}
 
 \newcommand{\cvevent}[3]{%
-    \vspace{4pt}
+    \vspace{5pt}
     {\color{accent}\textbf{#1}}
     \par
     \ifstrequal{#2}{}{}{\textit{\color{accent}#2}}
@@ -239,25 +239,25 @@
     \normalsize\par}
 
 \newcommand{\cvproject}[4]{
-    \vspace{6pt}
+    \vspace{2pt}
     {\color{accent}\normalsize\textbf{#1}}\par
     {\small\MakeUppercase{#2~--~}\textit{#3}}\par
     \ifstrequal{#4}{}{}{\href{#4}{\small\color{GdocLink}\underline{Conference Page}}\par}}
     
 \newcommand{\cvpub}[4]{
-    \vspace{6pt}
+    \vspace{2pt}
     {\color{accent}\normalsize\textbf{#1}}\par
     {\small\MakeUppercase{#2~--~}\textit{#3}}\par
     \ifstrequal{#4}{}{}{\href{https://doi.org/#4}{\small\color{GdocLink}\underline{doi:#4}}\par}}
     
 \newcommand{\cvgscholar}[4]{
-    \vspace{6pt}
+    \vspace{2pt}
     {\color{accent}\normalsize\textbf{#1}}\par
     {\small{h-index:~#2, citations:~#3}}\par
     \ifstrequal{#4}{}{}{\href{https://scholar.google.com/citations?user=#4}{\small\color{GdocLink}\underline{profile link}}\par}}
 
 \newcommand{\cvaward}[3]{
-    \vspace{6pt}
+    \vspace{2pt}
     {\color{accent}\normalsize\textbf{#1}}\par
     {\small\textit{#2}}\par
     {\small\MakeUppercase{#3}}\par}
@@ -272,7 +272,7 @@
     \small{#1}\par}
 
 \newcommand{\cvref}[5]{%
-    \vspace{6pt}
+    \vspace{2pt}
     \textcolor{accent}{\normalsize\textbf{#1},~#2}\par
     {\textit{#3,~#4}}\par
     {\href{mailto:#5}{\color{GdocLink}\underline{#5}}}\par}
