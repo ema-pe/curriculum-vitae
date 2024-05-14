@@ -1,5 +1,5 @@
 # GitLab CI configuration to build the curriculum as a PDF from LaTeX sources.
-image: aergus/latex:2021-10-08
+image: aergus/latex:2024-05-12
 
 stages:
   - build
