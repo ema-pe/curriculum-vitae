@@ -1,5 +1,5 @@
 cv.aux
-cv.log
+*.log
 cv.out
 cv.pdf
 pdfa.xmpi
